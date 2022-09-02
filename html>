@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FIRST CODE</title>
+   <style>
+      html{
+    background-color: aliceblue;
+}
+body{
+    background-color: antiquewhite;
+    max-width: 100%;
+   margin: 30px;
+   text-align: center;
+   padding: 10px;
+}
+header,footer{
+    background-color: navy;
+    color: azure;
+    display: inline-block;
+    width: 100%;
+}
+ li{
+    list-style: none;
+    line-height: 18px;
+ }
+ header li{
+     display: inline-block;
+      float: none;
+ }
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: small;
+        }
+   header a{
+       color: white;
+       }
+   footer a{
+       color: white;
+   }
+
+header h1{
+   
+    text-align: center;
+}
+a:hover{
+    color: blueviolet;
+    font-size: x-large;
+}
+/* .float{
+    
+} */
+
+#home{
+    margin-right: 15px;
+}
+#shop{
+    margin-right: 15px;
+}
+
+#contact{
+    margin-right: 15px;
+}
+input [type="search"] {
+    width: 50%;
+    margin-bottom: 5px;
+}
+.product{
+    box-sizing: border-box;
+     /* width: 30%; */
+    border: 1px solid blue;
+     margin: 5px;
+    padding: 5px;
+    width: 100%;
+   text-align: center;
+}
+img{max-width: 100%;
+}
+aside li{
+    line-height: 25px;
+}
+.button{
+    padding: 10px;
+    display: inline-block;
+}
+.button:last-of-type {
+    background: blue;
+    color: white;
+    border-radius: 10px;
+}
+.button:first-of-type {
+    font-weight: bolder;
+}
+ .about{
+     width: 660px;
+}
+.about img{
+    max-width: 50%;
+    float: left;
+}
+#position{
+    top: 10px;
+}
+form{
+    padding: 10px;
+    /* margin: 10px 0; */
+    width: 600px;
+}
+.inline{
+    /* display: inline-block; */
+    width: 100px;
+}
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    width: 400px;
+}
+form > div{
+    padding: 10px 0;
+}
+table{
+    width: 400px;
+    text-align: left;
+    margin: 20px 0;
+}
+caption{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: dotted;
+    padding: 10px;
+}
+th,td{
+    padding: 10px;
+}
+tr:hover{
+    background: azure;
+}
+
+@media (min-width: 700px) {
+    input[type="search"]{
+        width: 40%;
+    }
+    .product{
+        display: inline-block;
+        width: 47%;
+    }
+}
+@media (min-width: 500px){
+    main{
+        width: 68%;
+        display: inline-block;
+        padding: 10px;
+    }
+    aside{
+        width: 27%;
+        vertical-align: top;
+        display: inline-block;
+        padding: 10px;
+    }
+}
+@media(min-width: 1100px){
+    body{
+        max-width: 80vw;
+       margin: auto;
+    }
+    .product{
+             width: 30%;
+    }
+    a:hover{
+        font-size: large;
+    }
+
+}
+@media(max-width: 700px){
+    .about{
+        width: 200px;
+       float: initial;
+       margin: auto;
+    }
+    table{
+        width: 50%;
+    }
+}
+
+@media(min-width: 300px) {
+    table{
+        margin: auto;
+    }
+    h3{
+        text-align: center;
+    }
+    li{
+        text-align: center;
+    }
+}
+@media(max-width: 600px){
+    form{
+        width: 50%;
+    }
+    #asidecontact{
+        width: 100%;
+    }
+    input[type="text"], input[type="email"], textarea {
+        /* padding: 10px; */
+        width: 200px;
+    }
+}
+@media(max-width: 1200px){
+    form{
+        margin: auto;
+        padding: 10px;
+    }
+    h2{
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+   </style>
+   <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+   <header style="height: 200px; " >
+      
+          <h1>TECH WORK</h1>
+          <div class="float"><nav >
+            <ul>
+            <li id="home"><a href="fcode.html">HOME</a></li>
+            <li id="shop"><a href="about.html">SHOP</a></li>
+            <li id="contact"><a href="contact.html">CONTACT US</a></li>
+            </ul>
+           </nav>
+            <input type="search" placeholder="search..."></div>
+          
+
+
+  </header>
+   <aside>
+          
+    <section>
+     
+      
+        <ul>
+         <h2 >Shop by:</h2>
+         <h3 >Category</h3>
+          <hr>
+         <h3>All Items:</h3> 
+           <li>Game Controllers </li>
+           <li>camera</li>
+           <li>Lenses</li>
+           <li>Head Phones</li>
+           <li>Cables</li>
+        </ul>   
+    </section>
+    <section>
+      
+      <hr>
+      <ul>
+         <h3>Price <span>($)</span></h3>
+          <li>1-9</li>
+          <li>10-29</li>
+          <li>30-59</li>
+          <li>60-89</li>
+          <li>90-100</li>
+
+         </ul>  
+</section>
+
+</aside>
+<main>
+    <h2>All Price</h2>
+    <div class="product">
+      <div ><h4><a href="about.html">Game Controllers</a></h4></div>
+      <img src="controller.jpg" >
+      <p>$79.65</p>
+      <p><small>Awesome</small> Game Controllers <br> (For canon &copy;2017)!</p> 
+      <a href="about.html" class="button">More Info</a>
+      <a href="about.html"class="button" >Add To Cart</a>
+   </div>
+   <div class="product">
+      <div ><h4><a href="contact.html">Camera</a></h4></div>
+      <img src="camera.jpg" >
+      <p>$79.65</p>
+      <p><small>Awesome</small> camera<br>(For canon &copy;2017)! </p> 
+      <a href="about.html" class="button" >More Info</a>
+      <a href="contact.html" class="button" id="position">Add To Cart</a>
+   </div>
+   <div class="product">
+      <div><h4><a href="contact.html"> Lenses</a></h4></div>
+      <img src="lenses.jpg"  >
+      <p>$79.65</p>
+     <p><small>Awesome</small> lenses <br>(For canon &copy;2017)! </p> 
+      <a href="about.html" class="button">More Info</a>
+      <a href="contact.html" class="button">Add To Cart</a>
+   </div>
+   <div class="product">
+      <div><h4><a href="contact.html">Head Phones</a></h4></div>
+      <img src="headphones.jpg" >
+      <p>$79.65</p>
+       <p><small>Awesome</small> Head Phones<br> (For canon &copy;2017)!</p>
+      <a href="about.html" class="button">More Info</a>
+      <a href="contact.html" class="button">Add To Cart</a>
+   </div>
+   
+   <div class="product">
+      <div><h4><a href="contact.html">Cables</a></h4></div>
+      <img src="cables.jpg" >
+      <p>$79.65</p>
+     <p><small>Awesome</small> cables<br>(For canon &copy;2017)! </p> 
+      <a href="about.html" class="button">More Info</a>
+      <a href="contact.html" class="button">Add To Cart</a>
+   </div>
+   <div class="product">
+      <div><h4><a href="contact.html">Microphone</a></h4></div>
+   <img src="microphone.jpg">
+      <p>$79.65</p>
+      <p><small>Awesome</small> microphones <br>(For canon &copy;2017)!</p> 
+      <a href="about.html" class="button">More Info</a>
+      <a href="contact.html" class="button">Add To Cart</a>
+   </div>
+
+  </main>
+</body>
+<footer>
+   <nav>
+      <ul>
+         <li><a href="fcode.html">HOME</a></li>
+         <li><a href="about.html">SHOP</a></li>
+         <li><a href="contact.html">CONTACT US</a></li>
+         </ul>
+   </nav>
+ 
+</footer> 
+
+</html>
+ 
+   
+
+    
